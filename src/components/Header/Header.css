@@ -1,0 +1,29 @@
+.header {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 48px 0 18px;
+  background: #fff;
+}
+
+.header__title {
+  margin: 0 auto;
+  font-family: "RoadRadio", Arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 64px;
+  line-height: 64px;
+  color: #292929;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 24px 0 8px;
+  }
+
+  .header__title {
+    font-size: 48px;
+    line-height: 48px;
+  }
+}

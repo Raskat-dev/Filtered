@@ -1,0 +1,127 @@
+.filter {
+  box-sizing: border-box;
+  padding: 24px 85px;
+  background: #2753f0;
+  min-height: 90px;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+
+.filter__filters {
+  max-width: 1440px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.filter__search-container {
+  margin-right: 64px;
+  display: flex;
+  align-items: center;
+  width: 313px;
+}
+
+.filter__search-label {
+  font-family: "Roboto", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  padding-right: 12px;
+  margin: 0;
+}
+
+.filter__search {
+  background: #ffffff;
+  border: 1px solid #cacaca;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  height: 42px;
+  width: 244px;
+  padding: 0 14px;
+}
+
+.filter__search::placeholder {
+  color: #999999;
+}
+
+.filter__buttons-container {
+  display: flex;
+  align-items: center;
+  width: 353px;
+}
+
+.filter__buttons-label {
+  font-family: "Roboto", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  padding-right: 28px;
+  margin: 0;
+}
+
+.filter__button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-sizing: border-bpx;
+  padding: 10px 18px;
+  background: #292929;
+  border-radius: 3px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #fff;
+  margin: 0;
+  transition: 0.3s ease-in;
+}
+.filter__button:hover {
+  opacity: 0.75;
+}
+.filter__button:nth-of-type(2) {
+  margin: 0 16px;
+}
+.filter__button_active {
+  background: #fff;
+  color: #000000;
+}
+
+@media screen and (max-width: 898px) {
+  .filter__filters {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .filter__search-container {
+    margin-right: 0;
+    margin-bottom: 24px;
+  }
+
+  .filter__buttons-container {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 356px) {
+  .filter__buttons-container {
+    width: 320px;
+  }
+
+  .filter__buttons-label {
+    padding-right: 14px;
+  }
+
+  .filter__button {
+    padding: 10px 10px;
+  }
+}

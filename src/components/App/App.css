@@ -1,0 +1,15 @@
+.app {
+  height: 100%;
+}
+
+.app__without-result {
+  font-family: "RoadRadio", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 32px;
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+  color: #292929;
+}
