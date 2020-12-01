@@ -9,7 +9,7 @@ export const middleware = (store) => (next) => (action) => {
       );
     } else {
       window.location.hash =
-        window.location.hash + `emailFilter=${action.payload}?`;
+        `emailFilter=${action.payload}?` + window.location.hash.split("").filter(f => f !== '#').join("");
     }
   }
   if (action.type === NAME_FILTER) {
@@ -27,7 +27,7 @@ export const middleware = (store) => (next) => (action) => {
   if (action.type === REMOVE_EMAIL_FILTER) {
     if (window.location.hash.includes("emailFilter")) {
       window.location.hash = window.location.hash.replace(
-        /emailFilter=(.){0,}\?/,
+        /emailFilter=(.){0,4}\?/,
         ""
       );
     }
